@@ -1,19 +1,41 @@
 .myClass {
-  text-align: center;
-  padding: 10px
+    text-align: center;
+    padding: 10px
 }
-.party{
-  height: 200px;
-  width: 200px;
+
+.party {
+    height: 200px;
+    width: 200px;
 }
-.fade{
-  animation-name: fade-in;
-  animation-duration: 2s;
+
+.fade {
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
-.age-stats{
-  opacity: 100;
+
+.age-stats {
+    opacity: 100;
 }
-@keyframes fade-in{
-  from { opacity: 0 }
-  to { opacity: 100 }
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 100
+    }
+}
+
+.right-button {
+    cursor: pointer;
+    float: right;
+}
+
+.list-item {
+    display: inline-block;
+}
+
+body {
+    padding: 5%;
+    text-align: center;
 }

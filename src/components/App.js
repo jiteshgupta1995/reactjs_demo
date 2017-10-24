@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 //import { Form, FormControl, Button } from 'react-bootstrap';
 import './App.css';
+import CharacterList from './CharacterList';
+import HeroList from './HeroList';
+import SquadStats from './SquadStats';
 //import AgeTeller from './AgeTeller.js';
-
-//var Alert = require('react-bootstrap').Alert;
 
 class App extends Component {
   // Age teller function code
@@ -42,7 +43,19 @@ class App extends Component {
   }*/
   render(){
     return (
-      <div>Hey</div>
+      <div>
+        <div className="row">
+          <div className="col-xs-4">
+            <CharacterList />
+          </div>
+          <div className="col-xs-4">
+            <HeroList />
+          </div>
+          <div className="col-xs-4">
+            <SquadStats />
+          </div>
+        </div>
+      </div>
     )
   }
 }
